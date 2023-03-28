@@ -1,13 +1,15 @@
-" Yuri color scheme
+" yuri color scheme
 "
 " by yury; in the public domain
 
-set bg=light
-
 hi clear
+
 if exists('syntax_on')
   syntax reset
 endif
+
+set bg=light
+
 
 let colors_name = 'yuri'
 
