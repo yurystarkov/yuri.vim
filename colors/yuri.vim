@@ -2,28 +2,32 @@
 "
 " by yury; in the public domain
 
-hi clear
+let colors_name = 'yuri'
+
+set bg=light
 
 if exists('syntax_on')
   syntax reset
 endif
 
-set bg=light
+hi clear
 
+" 256 colors
 
-let colors_name = 'yuri'
+" syntax
+hi Comment   cterm=none ctermfg=black   ctermbg=230
+hi Todo      cterm=none ctermfg=darkred ctermbg=230
+hi Constant  cterm=none ctermfg=none    ctermbg=none
+hi String    cterm=none ctermfg=none    ctermbg=none
+hi Character cterm=none ctermfg=none    ctermbg=none
 
-hi Comment        cterm=none           ctermfg=black   ctermbg=230
-hi Todo           cterm=bold           ctermfg=darkred ctermbg=230
-hi String         cterm=none           ctermfg=none    ctermbg=none
 hi Search         cterm=bold,underline ctermfg=none    ctermbg=none
 hi IncSearch      cterm=bold,underline ctermfg=none    ctermbg=none
+
 hi Warning        ctermbg=none         cterm=none      ctermfg=none
 hi Regexp         cterm=none           ctermfg=none    ctermbg=none
-hi Character      cterm=none           ctermfg=none    ctermbg=none
 hi Identifier     cterm=none           ctermfg=none    ctermbg=none
 hi Function       cterm=none           ctermfg=none    ctermbg=none
-hi Constant       cterm=none           ctermfg=none    ctermbg=none
 hi Directory      cterm=none           ctermfg=none    ctermbg=none
 hi NonText        cterm=none           ctermfg=none    ctermbg=none
 hi MatchParen     cterm=none           ctermfg=none    ctermbg=153
@@ -55,5 +59,7 @@ hi Cursor         cterm=reverse        ctermfg=none    ctermbg=none
 hi EndOfBuffer    cterm=none           ctermfg=grey    ctermbg=none
 hi Pmenu          cterm=none           ctermbg=255     ctermfg=232
 hi PmenuSel       cterm=none           ctermbg=250     ctermfg=232
+
+" ALE
 hi ALEWarning     cterm=none           ctermbg=none    ctermfg=none
 hi ALEWarningSign cterm=none           ctermbg=none    ctermfg=none
