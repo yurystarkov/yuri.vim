@@ -1,4 +1,8 @@
-" yuri color scheme
+"         _,-._
+" yuri   / \_/ \
+" color  >-(_)-<
+" scheme \_/ \_/
+"          `-'
 "
 " by yury; in the public domain
 
